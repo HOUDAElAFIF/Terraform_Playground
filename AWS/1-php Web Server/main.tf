@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 provider "random" {}
@@ -28,8 +28,8 @@ resource "aws_security_group" "web-sg" {
 
 
 resource "aws_instance" "web" {
-  ami           = "ami-069aabeee6f53e7bf"
-  instance_type = "t2.micro"
+  ami           = var.instance_ami
+  instance_type = var.instance_type
   key_name 	= "web-server"
   user_data     = file("init-script.sh")
   vpc_security_group_ids = [aws_security_group.web-sg.id]
