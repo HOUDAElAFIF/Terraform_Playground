@@ -1,6 +1,6 @@
 # 1-  Launching a PHP Web Server on AWS 
 
-in this project we will create an EC2 instance that runs a php web application 
+In this project we will create an EC2 instance that runs a php web application 
 
 ## OverView
 
@@ -14,6 +14,6 @@ This project provisions a simple web server environment on Amazon Web Services (
 ### 1-Scalability :
    The current infrastructure is designed for small scale application and may not be suitable for large,high traffic web apps
 
-## 2- High availability : 
+### 2- High availability : 
    This infra is consisted of only one EC2 instance , wich can be a single point of failure, If this instance goes down, your web application will become unavailable
 
