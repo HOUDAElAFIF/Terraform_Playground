@@ -9,7 +9,7 @@ This project provisions a simple web server environment on Amazon Web Services (
 ![Architecture](./architecture.png)
 
 
-## Limitaions 
+## Limitations 
 
 ### 1-Scalability :
    The current infrastructure is designed for small scale application and may not be suitable for large,high traffic web apps
